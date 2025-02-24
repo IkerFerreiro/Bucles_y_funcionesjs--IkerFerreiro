@@ -11,5 +11,15 @@ const tracks = [
     { title: 'Stairway to Heaven', genre: 'Rock' }
   ];
   
- 
+
+  const groupByGenre = {};
+
+  for (const track of tracks) {
+    const genre = track.genre;
+    if (!groupByGenre[genre]) {
+      groupByGenre[genre] = [];
+      }
+      groupByGenre[genre].push(track);
+    }
   
+console.log(groupByGenre);
