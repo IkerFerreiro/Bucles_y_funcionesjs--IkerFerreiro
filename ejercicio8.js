@@ -8,9 +8,9 @@ const artists = [
   
 
   for (let i = 0; i < artists.length; i++) {
-    let artist = artists[i];
-    for (let j = 0; j < artist.influences.length; j++) {
-        let influence = artist.influences[j];
-        console.log(`${artist.name} is influenced by ${influence}`);
+        let artist = artists[i];
+        for (let j = 0; j < artist.influences.length; j++) {
+            let influence = artist.influences[j];
+            console.log(`${artist.name} is influenced by ${influence}`);
+        }
     }
-}
